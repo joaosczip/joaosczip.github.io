@@ -6,13 +6,17 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  height: 100vw;
+  height: 100%;
   color: #fff;
   background-color: #403c3c;
   border-right: 4px solid #e2e2e2;
   box-shadow: ${(props) => props.theme.boxShadow};
-  padding: 0 56px 0 28px;
+  padding: 0 56px 26px 28px;
   min-width: 420px;
+
+  @media (max-width: 420px) {
+    min-width: 0;
+  }
 `;
 
 export const MainInfo = styled.div`
@@ -39,6 +43,15 @@ export const PersonalInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+
+    a {
+      margin: 0 6px;
+    }
+
+    @media (max-width: 420px) {
+      margin-top: 26px;
+    }
   }
 `;
 

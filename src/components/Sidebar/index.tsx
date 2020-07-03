@@ -7,7 +7,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import CodeIcon from "@material-ui/icons/Code";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import IconButton from "@material-ui/core/IconButton";
+import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import { Link } from "@material-ui/core";
 import {
   Container,
@@ -40,20 +40,29 @@ const Sidebar: React.FC = () => {
         <PersonalInfo>
           <h3>João Guilherme Berti Sczip</h3>
           <div>
-            <IconButton
-              onClick={() => window.open("https://github.com/joaosczip")}
+            <a
+              href="https://github.com/joaosczip"
+              target="__blank"
+              title="Perfil GitHub"
               style={{ color: "#fff" }}
             >
-              <GitHubIcon style={{ fontSize: "28px" }} />
-            </IconButton>
-            <IconButton
-              onClick={() =>
-                window.open("https://www.linkedin.com/in/joaosczip/")
-              }
+              <GitHubIcon style={{ fontSize: "32px" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joaosczip/"
+              target="__blank"
+              title="Perfil LinkedIn"
               style={{ color: "#fff" }}
             >
               <LinkedInIcon style={{ fontSize: "34px" }} />
-            </IconButton>
+            </a>
+            <a
+              href="https://portfolio-sczip.s3.amazonaws.com/CV_Joao_Guilherme.pdf"
+              title="Download Currículo em PDF"
+              style={{ color: "#fff" }}
+            >
+              <InsertDriveFileIcon style={{ fontSize: "34px" }} />
+            </a>
           </div>
         </PersonalInfo>
       </MainInfo>
@@ -82,7 +91,7 @@ const Sidebar: React.FC = () => {
           </InfoListTitle>
           <Divider />
           <InfoListSectionContent>
-            <li>BIP Carros - Analista de Sistemas</li>
+            <li>BIP Carros - Analista de Sistemas (Atual)</li>
             <li>UnC - Desenvolver Web</li>
             <li>Freelancer</li>
           </InfoListSectionContent>
