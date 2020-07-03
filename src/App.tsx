@@ -7,7 +7,6 @@ const App: React.FC = () => {
   return (
     <Container>
       <Sidebar />
-      <h1>Portfolio</h1>
     </Container>
   );
 };

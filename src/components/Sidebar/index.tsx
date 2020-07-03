@@ -5,6 +5,9 @@ import InfoIcon from "@material-ui/icons/Info";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import SchoolIcon from "@material-ui/icons/School";
 import CodeIcon from "@material-ui/icons/Code";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import IconButton from "@material-ui/core/IconButton";
 import { Link } from "@material-ui/core";
 import {
   Container,
@@ -36,6 +39,22 @@ const Sidebar: React.FC = () => {
         </div>
         <PersonalInfo>
           <h3>João Guilherme Berti Sczip</h3>
+          <div>
+            <IconButton
+              onClick={() => window.open("https://github.com/joaosczip")}
+              style={{ color: "#fff" }}
+            >
+              <GitHubIcon style={{ fontSize: "28px" }} />
+            </IconButton>
+            <IconButton
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/joaosczip/")
+              }
+              style={{ color: "#fff" }}
+            >
+              <LinkedInIcon style={{ fontSize: "34px" }} />
+            </IconButton>
+          </div>
         </PersonalInfo>
       </MainInfo>
       <InfoList>
@@ -91,7 +110,9 @@ const Sidebar: React.FC = () => {
           </InfoListTitle>
           <Divider />
           <InfoListSectionContent>
+            <li>Skills</li>
             <li>Projetos</li>
+            <li>Artigos</li>
             <li>Contato</li>
           </InfoListSectionContent>
         </InfoListSection>

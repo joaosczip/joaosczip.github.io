@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-color: #403c3c;
   border-right: 4px solid #e2e2e2;
   box-shadow: ${(props) => props.theme.boxShadow};
-  padding: 0 28px;
+  padding: 0 56px 0 28px;
   min-width: 420px;
 `;
 
@@ -34,6 +34,12 @@ export const PersonalInfo = styled.div`
     margin-bottom: 10px;
     font-size: 24px;
   }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const InfoList = styled.div`
@@ -41,7 +47,7 @@ export const InfoList = styled.div`
   margin-top: 16px;
 
   div + div {
-    margin-top: 32px;
+    margin-top: 42px;
   }
 `;
 
