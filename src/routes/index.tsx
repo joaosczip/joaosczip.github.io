@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import About from "../pages/About";
+import Experiences from "../pages/Experiences";
 
 const Router: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={About} />
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route path="/" exact component={About} />
+      <Route path="/experiences" exact component={Experiences} />
+    </Switch>
   );
 };
 

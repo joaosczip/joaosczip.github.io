@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, AboutText } from "./styles";
+import { Container, AboutText, TechList, Link } from "./styles";
 import { MainTitle, Divider } from "../../styles";
 
 const About: React.FC = () => {
@@ -26,7 +26,26 @@ const About: React.FC = () => {
           apresentados. <br /> <br />
           Atualmente atuando como Analista de Sistemas, podendo por em prática
           grande parte do conhecimento obtido durante a graduação e tendo a
-          oportunidade de adquirir cada vez mais experiência.
+          oportunidade de adquirir cada vez mais experiência. <br /> <br />
+          Meu foco principal é o desenvolvimento WEB, tendo como as principais
+          habilidades:
+        </p>
+        <TechList>
+          <li>Javascript (ReactJS, NodeJS, Typescript)</li>
+          <li>PHP (Laravel)</li>
+          <li>Docker</li>
+          <li>Gitlab CI</li>
+          <li>Servless (AWS Lambda, Serverless Framework)</li>
+          <li>AWS (ECS, EKS, S3, CLOUDFRONT)</li>
+          <li>Orientação a objetos</li>
+          <li>Prinícipios SOLID</li>
+          <li>Testes Unitários e TDD</li>
+          <li>Clean Architecture</li>
+        </TechList>
+        <p>
+          A seção <Link to="/skills">Skills</Link> conta com uma explicação
+          muito mais detalhada sobre a experiência em cada um dos tópicos
+          citados acima.
         </p>
       </AboutText>
     </Container>

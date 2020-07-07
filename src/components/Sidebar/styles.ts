@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import MaterialAvatar from "@material-ui/core/Avatar";
+import { Link as RouterLink } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -16,6 +17,17 @@ export const Container = styled.div`
 
   @media (max-width: 420px) {
     min-width: 0;
+  }
+`;
+
+export const Link = styled(RouterLink)`
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
   }
 `;
 

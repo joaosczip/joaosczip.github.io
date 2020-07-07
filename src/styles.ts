@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  font-size: 42px;
+  font-size: 38px;
 `;
 
 export const SubTitle = styled.h2`

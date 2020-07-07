@@ -8,10 +8,10 @@ import CodeIcon from "@material-ui/icons/Code";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
-import { Link } from "@material-ui/core";
 import {
   Container,
   Avatar,
+  Link,
   PersonalInfo,
   MainInfo,
   InfoList,
@@ -69,7 +69,7 @@ const Sidebar: React.FC = () => {
       <InfoList>
         <InfoListSection>
           <InfoListTitle>
-            <Link href="#" color="inherit">
+            <Link to="/" color="inherit">
               Sobre
             </Link>
             <InfoIcon style={{ fontSize: "28px" }} />
@@ -84,7 +84,7 @@ const Sidebar: React.FC = () => {
         </InfoListSection>
         <InfoListSection>
           <InfoListTitle>
-            <Link href="#" color="inherit">
+            <Link to="/experiences" color="inherit">
               Experiências
             </Link>
             <CodeIcon style={{ fontSize: "28px" }} />
@@ -98,7 +98,7 @@ const Sidebar: React.FC = () => {
         </InfoListSection>
         <InfoListSection>
           <InfoListTitle>
-            <Link href="#" color="inherit">
+            <Link to="" color="inherit">
               Formação Acadêmica
             </Link>
             <SchoolIcon style={{ fontSize: "28px" }} />
@@ -112,7 +112,7 @@ const Sidebar: React.FC = () => {
         </InfoListSection>
         <InfoListSection>
           <InfoListTitle>
-            <Link href="#" color="inherit">
+            <Link to="" color="inherit">
               Mais
             </Link>
             <AddCircleIcon style={{ fontSize: "28px" }} />
