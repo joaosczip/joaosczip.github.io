@@ -1908,6 +1908,14 @@ header .logo a {
   text-align: justify;
 }
 
+.articles-list li {
+  margin: 16px 0;
+}
+
+.articles-list li strong {
+  font-size: 22px;
+}
+
 #portfolio {
   background: #ffffff;
   padding-top: 12rem;
