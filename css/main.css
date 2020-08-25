@@ -1893,6 +1893,21 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+
+.portfolio-list {
+  list-style-type: none;
+}
+
+.portfolio-list strong {
+  color: #000;
+  font-size: 22px;
+}
+
+.portfolio-list ul {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
 #portfolio {
   background: #ffffff;
   padding-top: 12rem;
